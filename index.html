@@ -48,12 +48,6 @@ divr {text-align: right;}
      float:left
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
 
 
 #myBtn {
@@ -177,7 +171,50 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 
+ 
+  container {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
   
+ 
+ 
 </style>
 </head>
 <body>
@@ -199,6 +236,20 @@ a:active {
   </div>
 </div>
 
+  
+<div class="container">
+  <img src="https://i2.wp.com/factschronicle.com/wp-content/uploads/2017/05/Bose-QuietComfort-35-Best-Wireless-Headphones-2017-min.jpg?fit=640%2C380&ssl=1" alt="Headphones" class="image">
+  <div class="middle">
+    <div class="text">Product Details</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="https://static.bhphotovideo.com/explora/sites/default/files/styles/960/public/_shure-aonic-50-wireless-headphones_lifestyle-004-16x9.jpg?itok=GpxHyHuY" alt="Other Headphones" class="image">
+  <div class="middle">
+    <div class="text">Product Details</div>
+  </div>
+</div>
   
   
 <div class="hero-image1">
