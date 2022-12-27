@@ -14,11 +14,18 @@ body, html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+  
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}    
+  
+  
 .column {
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }  
 
 /* Clear floats after the columns */
@@ -161,26 +168,34 @@ function topFunction() {
 
   
 <div class="hero-imageabout">
-<div class="row">
-  <div class="column">
-    <br>
-    <br>
-    <center><iframe  width="550" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></center>
-  </div>
-  <div class="column">
-    <br>
-    <br>
-    <h2 style="color:white;"><center>Column</center></h2>
-  </div>
-</div>  
+  <div class="row">
+    <div class="column">
+      <br>
+      <br>
+      <center><iframe  width="550" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></center>
+    </div>
+    <div class="column">
+      <br>
+      <br>
+      <h2 style="color:white;"><center>Column</center></h2>
+    </div>
+  </div>  
 </div>    
   
-  
 <div class="hero-imageteam">
-    <h1 style="font-size:50px">Stories by Heroes</h1>
-    <h4 style="font-size:30px">Neurodiversity makes us unique </h3>
+  <div class="row">
+   <div class="column3">
+     <p>1</p>
+   </div>
+   <div class="column3">
+     <p>1</p>
+   </div>
+   <div class="column3">
+     <p>1</p>  
+   </div>
   </div>
-</div>
+</div> 
+  
   
 </body>
 </html>
