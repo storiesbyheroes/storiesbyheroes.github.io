@@ -15,12 +15,6 @@ body, html {
 }
 
   
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
 
 /* Clear floats after the columns */
 .row:after {
@@ -71,6 +65,31 @@ li a:hover {
   color: white;
 }
 
+
+.hero-imageabout{
+  background-image: url("about.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-textabout {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.columnabout {
+  float: left;
+  width: 50;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
   
 </style>
 </head>
@@ -92,5 +111,21 @@ li a:hover {
   </div>
 </div>
 
+  
+<div class="hero-imageabout">
+ <div class="hero-textabout">
+  <div class="row">
+    <div class="column">
+      <iframe width="350" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+    <div class="column">
+      <h2><center>Column 2<center></h2>
+    </div>
+</div>
+    
+    
+  </div>
+</div> 
+  
 </body>
 </html>
