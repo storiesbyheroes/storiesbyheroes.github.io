@@ -8,7 +8,10 @@ body, html {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+  
+* {
+  box-sizing: border-box;
+}
 
 a:link {
   color: white;
@@ -35,9 +38,12 @@ divl {text-align: left;}
 divc {text-align: center;}
 divr {text-align: right;}
 
+  
 .column {
-     width:300px;
-     float:left
+  float: left;
+  width: 33.33%;
+  padding: 4px;
+  height: 300px; 
 }
 
 .column1 {
@@ -45,6 +51,12 @@ divr {text-align: right;}
      float:left
 }
 
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}  
 
 #myBtn {
   display: none;
@@ -112,15 +124,16 @@ divr {text-align: right;}
   color: white;
 }
 
-.hero-image2 {
-  background-image: url('footerpic.png');
+
+.hero-imagefooter {
+  background-image: url("footerpic.png");
   height: 40%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-}
-
+  position: relative;  
+  
+  
 .hero-text button {
   border: none;
   outline: 0;
@@ -254,25 +267,26 @@ function topFunction() {
 }
 </script>
   
-<div class="hero-image2">
-  <div class="hero-text2">
-    <divl><h4 style="font-size:30px">SBH<img src="SbH.svg"  width="50" height="50""></h4></divl>
-    <div class="column">
-      <h3>Our story</h2>
-      <p>paragraph text</p>
-    </div>
-    <div class="column">
-      <h3>Links</h3>
-      <p><a href="#about">Blog</a></p>
-      <p><a href="#about">Meet a Hero</a></p>
-      <p><a href="#about">Tell us your Story</a></p>
-      <p><a href="#about">Our Team</a></p>
-   </div>
-   <div class="column">
-     <h3>Follow us</h3>
-     <p><a href='https://www.facebook.com'><img src='Fblogo.svg' style="width:30px;height:30px;"></a> <a href='https://www.linkedin.com/in/constantinos-petrides-4366b7133'><img src='Inlogo.svg' style="width:30px;height:30px;"></a> <a href='https://twitter.com'><img src='Twitlogo.svg' style="width:30px;height:30px;"></a>  <a href='https://www.instagram.com'><img  src= 'Instalogo.svg' style="width:30px;height:30px;"></a>  <a href='https://www.youtube.com'><img src= 'Ytubelogo.svg' style="width:30px;height:30px;"></a></p>
-   </div>
- </div> 
+<div class="hero-imagefooter">
+<br>
+<h2 style="color:white;"> &nbsp; &nbsp; SBH <img src="SbH.svg"  width="50" height="50""></h2>
+<div class="row">
+  <div class="column" style="background-image: url('footerpic.png');">
+    <h3 style="color:white;"><center>Our story<center></h3>
+    <p> style="color:white;"<center>Some text..<center></p>
+  </div>
+  <div class="column" style="background-image: url('footerpic.png');">
+    <h3 style="color:white;"><center>Links<center></h3>
+    <p><center><a href="#about">Blog</a><center></p>
+    <p><center><a href="#about">Meet a Hero</a><center></p>
+    <p><center><a href="#about">Tell us your Story</a><center></p>
+    <p><center><a href="#about">Our Team</a><center></p>
+  </div>    
+  <div class="column" style="background-image: url('footerpic.png');">
+    <h3 style="color:white;"><center>Follow us<center></h3>
+    <p><center><a href='https://www.facebook.com'><img src='Fblogo.svg' style="width:30px;height:30px;"></a> <a href='https://www.linkedin.com/in/constantinos-petrides-4366b7133'><img src='Inlogo.svg' style="width:30px;height:30px;"></a> <a href='https://twitter.com'><img src='Twitlogo.svg' style="width:30px;height:30px;"></a>  <a href='https://www.instagram.com'><img  src= 'Instalogo.svg' style="width:30px;height:30px;"></a>  <a href='https://www.youtube.com'><img src= 'Ytubelogo.svg' style="width:30px;height:30px;"></a><center></p>
+  </div>  
+</div>
 </div>
   
 </body>
