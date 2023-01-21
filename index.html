@@ -152,88 +152,10 @@ a:active {
 }
 
 
-*,
-:after,
-:before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
-}
-
-.scroll-down {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -16px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #FFF;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-}
-
-.scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
-}
-
-@keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-	
 </style>
 </head>
 <body>
-	
-	
-<script>
- $(function() {
-    $('.scroll-down').click (function() {
-      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
-      return false;
-    });
-  });	
-</script>	
-	
+
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;background-color:#333333;" id="mySidebar">
   <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item  w3-left w3-padding-32">&times;</a> 
@@ -301,7 +223,6 @@ function topFunction() {
 	 <h4 id="demo"></h4>  
     <p><a href="https://www.youtube.com/channel/UC45zqhO_NcXjyp1uzzQvG8A"><img src='/images/Ytubelogo.svg' style="width:200px;height:50px;"></a></p>
   </div>
-<a href="D" class="scroll-down" address="true"></a>	
 </div>
 
 <script>
@@ -338,7 +259,7 @@ var x = setInterval(function() {
 	
 	
 	
- <section id="D">
+  
  <div class="w3-row-padding" style="background-image: url('aboutvideo.png');" >
     <div class="w3-half">
       <br>
@@ -358,7 +279,7 @@ var x = setInterval(function() {
     </div>
   </div>  
 </div>    
-</section>
+  
 
 <div class="w3-row-padding" style="background-image: url('About.png');" >
      <h3>&nbsp</h3>
