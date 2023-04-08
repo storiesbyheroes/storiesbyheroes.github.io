@@ -412,22 +412,108 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
+<script>
+$(function () {
+  $("a[href*=#]").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      { scrollTop: $($(this).attr("href")).offset().top },
+      500,
+      "linear"
+    );
+  });
+});
 </script>	
+	
+	
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+  
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
 
-<header class="w3-container w3-top  w3-xlarge w3-padding-16" style="color:white;background-color:#333333;">
-    <a href class="w3-left w3-padding"><a href="https://storiesbyheroes.com"><img src='/images/logoround.png' style="width:50px;height:50px;"></a>
-    <a href="javascript:void(0)" class="w3-right w3-button" style="color:white;background-color:#333333;" onclick="w3_open()">☰</a>	
-</header>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>  
   
-  
-<div class="hero-imagetitle">
+<section id="section01" class="demo">
+  <div class="hero-imagetitle">
   <div class="hero-texttitle">
-    <h1>Under construction</h1>
-    <h4>Days remaining ...  </h4>
-	 <h4 id="demo"></h4>  
-    <p><a href="https://www.youtube.com/channel/UC45zqhO_NcXjyp1uzzQvG8A"><img src='/images/Ytubelogo.svg' style="width:200px;height:50px;"></a></p>
-  </div>
+    <h1>Petrides Constantinos</h1>  
+    <h4>Physics Student at NKUA</h4>  
+  </div>	
+  <a href="#section2"><span></span></a>
+  </div>	  
+</section>
+	
+		
+
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="section2">
+    <h2 class="w3-wide">Welcome !!!</h2>
+    <p>&nbsp;</p>
+    <p class="w3-opacity"><i>A bunch of atoms trying to understand themselves</i></p>
+    <p class="w3-justify">My name is Petrides Constantinos. I am a Physics Studend  at  National and Kapodistrian University of Athens (Dept. of Environmental Physics and Meteorology). I have also founded SbH (Stories by Heroes) movement, that aims to break stigmas surrounding disabled people and give disabled people a platform to speak about their disabilities, everyday life and the difficulties they face.</p>
+    <h2> &nbsp;</h2>
+    <a href="Full_CV.pdf"><button class="button1">CV</button></a>
+    <h2> &nbsp;</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="82150934.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+	<p>A bunch of atoms !</p>      
+      </div>
+      <div class="w3-third">
+        <img src="2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+	 <p>Latest adventure !</p>     
+      </div>
+      <div class="w3-third">
+       <img src="3.jpeg" class="w3-round" alt="Random Name" style="width:60%">
+	<p>&nbsp;</p>
+       <p>The beautiful moon!</p>      
+      </div>
+    </div>
+   <img src="Stat.svg" alt="Flowers in Chania" width="70%" height="345">
+   <br>
+ </div>	 
+		
+	
+  <hr>
+	
+<div class="w3-row-padding" style="background-image: url('footer.png');" >
+<br>
+<h3 style="color:white;"> &nbsp; &nbsp; GitHub <img src="icons8-github.svg"  width="50" height="50"></h3>
+    <div class="w3-third">
+      <h4 style="color:Turquoise;"><center>About<center></h4>
+      <center><p style="color:white;">My name is Petrides Constantinos. I am a Physics Studend  at  National and Kapodistrian University of Athens (Dept. of Environmental Physics and Meteorology). I have also founded SbH (Stories by Heroes) a movment that aims to break stigmas surrounding disabled people and give disabled people a platform to speak about their disabilities, everyday life and the difficulties they face.</p></center>
+    </div>
+    <div class="w3-third">
+      <h4 style="color:Turquoise;"><center>Links<center></h4>
+      <p><center><a href="https://www.linkedin.com/in/constantinos-petrides/">LinkedIn</a><center></p>
+      <p><center><a href="https://storiesbyheroes.com">Stories by Heroes</a><center></p>
+      <p><center><a href="https://github.com/costpetrides">GitHub</a><center></p>
+      <p><center><a href="mailto:costpetrides@icloud.com">Contact</a><center></p>
+    </div>    
+    <div cclass="w3-third">
+      <h4 style="color:Turquoise;"><center>Follow me<center></h4> 
+      <p><center><a href='https://www.linkedin.com/in/constantinos-petrides/'><img src='icons8-linkedin-2.svg' style="width:30px;height:30px;"></a><a href='https://github.com/costpetrides'><img src='icons8-github.svg' style="width:30px;height:30px;"></a></p>
+    </div>  
 </div>
+    
+</body>
+</html>
 
 <script>
 // Set the date we're counting down to
