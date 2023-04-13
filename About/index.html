@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>	
-<title>SbH - Stories by Heroes</title>
-<meta name="title" content="SbH - Stories by Heroes">
+<title>Petrides Constantinos</title>
+<meta name="title" content="Petrides Constantinos">
 <meta name="description" content="We aim to break stigmas surrounding disabled people and give disabled people a platform to speak about their disabilities,  everyday life and the difficulties they face.">  
-<meta name="keywords" content="SbH, Stories by Heroes, Stories, by, Heroes, Neurodiversity, Dyslexia, Austism, Youtube, channel, SBH">
+<meta name="keywords" content="Petrides, Consstantinos,SbH,Stories by Heroes">
 <meta name="author" content="Constantinos Petrides">
-<link rel="icon" type="image/x-icon" href="/images/favicon.ico"> 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">	
 <meta name="viewport" content="width=device-width, initial-scale=1">	
@@ -26,7 +25,21 @@ body, html {
   font-family: Chalkboard, sans-serif;
 }
 
+html, body {width: 100vw; height: 100vh;}
   
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10;
+}    
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 10;
+}  
+
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -57,7 +70,6 @@ li a:hover {
   background-color: #276;
 }  
 
-  
 #myBtn {
   display: none;
   position: fixed;
@@ -77,17 +89,25 @@ li a:hover {
    
 #myBtn:hover {
   background-color: #40E0D0;
-}  
-   
+}     
   
 .hero-imagetitle{
-  background-image: url("/images/Title.png");
+  background-image: url("wallpaper.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+
+.hero-imageabout{
+  background-color: #487d73; 
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}	
 
 .hero-texttitle {
   text-align: center;
@@ -98,6 +118,7 @@ li a:hover {
   color: white;
 }
 
+  
 a:link {
   color: white;
   background-color: transparent;
@@ -118,10 +139,9 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
- 
 
 .button1 {
-  background-color:#ffc800 ; 
+  background-color:#242423 ; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -135,60 +155,124 @@ a:active {
     
     
 .button1:hover {
-  background-color: #07b5af;
+  background-color: #575959;
   color: white;
 }
 
- 
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}
+
+#thanks {
+  background-color: #fff;
+}
+#thanks::after {
+  content: none;
+}
+#thanks div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#thanks h2 {
+  margin-bottom: 60px;
+  color: #333;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+#thanks p {
+  color: #333;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+}
+#thanks p a {
+  color: #333;
+  text-decoration: none;
+  transition: color .3s;
+}
+#thanks p a:hover {
+  color: #888;
+}
+
+
+#section01 a {
+  padding-top: 60px;
+}
+	
+#section01 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+	
+	
 </style>
 </head>
 <body>
- 
-<header class="w3-container w3-top  w3-xlarge w3-padding-16" style="color:white;background-color:#333333;">
-    <a href class="w3-left w3-padding"><a href="https://storiesbyheroes.com"><img src='/images/logoround.png' style="width:50px;height:50px;"></a>
-    <a href="javascript:void(0)" class="w3-right w3-button" style="color:white;background-color:#333333;" onclick="w3_open()">☰</a>	
-</header>
-  
-<section id="section01" class="demo">
-  <div class="hero-imagetitle">
-  <div class="hero-texttitle">
-    <h1>Petrides Constantinos</h1>  
-    <h4>Physics Student at NKUA</h4>  
-  </div>	
-  <a href="#section2"><span></span></a>
-  </div>	  
-</section>	
-	
-	
-	
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;background-color:#333333;" id="mySidebar">
-  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item  w3-left w3-padding-32">&times;</a> 
-  <a href="https://storiesbyheroes.com" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Home</a> 
-  <a href="https://storiesbyheroes.com/blog" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Blog</a> 
-  <a href="https://storiesbyheroes.com/about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">About</a>
-  <a href="https://www.youtube.com/@storiesbyheroes" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Meet a Hero</a>	
-</nav>
 
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-	
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
+<ul class="w3-navbar w3-black">
+  <li><a href="https://www.linkedin.com/in/constantinos-petrides/">LinkedIn</a></li>
+  <li><a href="https://github.com/costpetrides">GitHub</a></li>
+  <li><a href="https://storiesbyheroes.com">SbH</a></li>
+  <li><a href="mailto:costpetrides@icloud.com">Contact</a></li>
+</ul>	
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
 
-</script>		
-	
 <script>
 $(function () {
   $("a[href*=#]").on("click", function (e) {
@@ -201,41 +285,10 @@ $(function () {
   });
 });
 </script>	
-
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 	
 	
 	
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Apr 12, 2023 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+  
 <script>
 // Get the button
 let mybutton = document.getElementById("myBtn");
@@ -256,8 +309,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-</script> 	
-
+</script>  
+  
 <section id="section01" class="demo">
   <div class="hero-imagetitle">
   <div class="hero-texttitle">
@@ -267,37 +320,70 @@ function topFunction() {
   <a href="#section2"><span></span></a>
   </div>	  
 </section>
+	
+		
 
-<section id="section2" class="demo">
-  <div class="hero-imagetitle">
-  <div class="hero-texttitle">
-    <h1>Petrides Constantinos</h1>  
-    <h4>Physics Student at NKUA</h4>  
-  </div>	
-  <a href="#section2"><span></span></a>
-  </div>	  
-</section>	
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="section2">
+    <h2 class="w3-wide">Welcome !!!</h2>
+    <p>&nbsp;</p>
+    <p class="w3-opacity"><i>A bunch of atoms trying to understand themselves</i></p>
+    <p class="w3-justify">My name is Petrides Constantinos. I am a Physics Studend  at  National and Kapodistrian University of Athens (Dept. of Environmental Physics and Meteorology). I have also founded SbH (Stories by Heroes) movement, that aims to break stigmas surrounding disabled people and give disabled people a platform to speak about their disabilities, everyday life and the difficulties they face.</p>
+    <h2> &nbsp;</h2>
+    <a href="Full_CV.pdf"><button class="button1">CV</button></a>
+    <h2> &nbsp;</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="82150934.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+	<p>A bunch of atoms !</p>      
+      </div>
+      <div class="w3-third">
+        <img src="2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+	 <p>Latest adventure !</p>     
+      </div>
+      <div class="w3-third">
+       <img src="3.jpeg" class="w3-round" alt="Random Name" style="width:60%">
+	<p>&nbsp;</p>
+       <p>The beautiful moon!</p>      
+      </div>
+    </div>
+   <img src="Stat.svg" alt="Flowers in Chania" width="70%" height="345">
+   <br>
+</div>	
 	
+ <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="section3">
+    <h2 class="w3-wide">Course notes</h2>
+    <p>&nbsp;</p>
+    <p class="w3-justify">1. Calculus II <a href="https://drive.google.com/file/d/1dDuqkZR2tFSqPXEGu116PAxv_bdxt9xz/view?usp=sharing" style="color:blue;">(Notes)</a></p> 
+    <p class="w3-justify">2. Physics III (Electromagnetism) <a href="https://drive.google.com/file/d/1otcw2QsbI4ANod8EYZWLsQlrUm3DvYNL/view?usp=sharing" style="color:blue;">(Notes)</a></p>  
+    <p class="w3-justify">3. Mathematical Methods of Physics <a href="https://drive.google.com/file/d/1ulS229UpNvc7Mrr6DQXgKTc1GmLmJTHE/view?usp=sharing" style="color:blue;">(Notes)</a></p> 
+    <p class="w3-justify">4. Analytical Mechanics <a href="https://drive.google.com/file/d/1gsK0NgWDGLIpua51O0t9JdFbIrwx1nW2/view?usp=sharing" style="color:blue;">(Notes)</a></p>
+    <p class="w3-justify">5. Introduction to Atmospheric Physics <a href="https://drive.google.com/file/d/1Kh02TXrbv8DdCwv8GKvH4pu-X7S-W27y/view?usp=sharing" style="color:blue;">(Notes 1)</a><a href="https://drive.google.com/file/d/1fqRt2N3foJk0UGvluMezdH6IodL9IZEV/view?usp=sharing" style="color:blue;">(Notes 2)</a></p> 
+    <p class="w3-justify">6. Atmospheric Boundary Layer - ABL <a href="https://drive.google.com/file/d/1MZoFFRZ6yyXT2Vr1WG38uK72Ck4jM2X9/view?usp=sharing" style="color:blue;">(Notes)</a></p>
+    <p class="w3-justify">7. Atmospheric Quality <a href="https://drive.google.com/file/d/1OEiSVvU8AVBoEYxdJx3c54C6Y2aeGWNb/view?usp=sharing" style="color:blue;">(Notes)</a></p>
+ </div>	
 	
-<div class="w3-row-padding" style="background-image: url('/images/footer.png');" >
+  <hr>
+	
+<div class="w3-row-padding" style="background-image: url('footer.png');" >
 <br>
-<h3 style="color:white;"> &nbsp; &nbsp; SbH <img src="/images/SbH.svg"  width="50" height="50"></h3>
+<h3 style="color:white;"> &nbsp; &nbsp; GitHub <img src="icons8-github.svg"  width="50" height="50"></h3>
     <div class="w3-third">
-      <h4 style="color:Turquoise;"><center>Our story<center></h4>
-      <center><p style="color:white;">SbH is a movement aiming to break stigmas surrounding disabled people. We  support the acceptance and inclusion of all members of the neurodiverse community regardless of  age, religion, sexual orientation, gender or gender expression.</p></center>
+      <h4 style="color:Turquoise;"><center>About<center></h4>
+      <center><p style="color:white;">My name is Petrides Constantinos. I am a Physics Studend  at  National and Kapodistrian University of Athens (Dept. of Environmental Physics and Meteorology). I have also founded SbH (Stories by Heroes) a movment that aims to break stigmas surrounding disabled people and give disabled people a platform to speak about their disabilities, everyday life and the difficulties they face.</p></center>
     </div>
     <div class="w3-third">
       <h4 style="color:Turquoise;"><center>Links<center></h4>
-      <p><center><a href="https://storiesbyheroes.com/blog">Blog</a><center></p>
-      <p><center><a href="https://www.youtube.com/@storiesbyheroes">Meet a Hero</a><center></p>
-      <p><center><a href="mailto: costpetrides@icloud.com">Contact Us</a><center></p>
-      <p><center><a href="https://costpetrides.github.io">Our Team</a><center></p>
+      <p><center><a href="https://www.linkedin.com/in/constantinos-petrides/">LinkedIn</a><center></p>
+      <p><center><a href="https://storiesbyheroes.com">Stories by Heroes</a><center></p>
+      <p><center><a href="https://github.com/costpetrides">GitHub</a><center></p>
+      <p><center><a href="mailto:costpetrides@icloud.com">Contact</a><center></p>
     </div>    
     <div cclass="w3-third">
-      <h4 style="color:Turquoise;"><center>Follow us<center></h4>
-      <p><center><a href='https://www.facebook.com'><img src='/images/Fblogo.svg' style="width:30px;height:30px;"></a> <a href='https://www.linkedin.com/company/stories-by-heroes'><img src='/images/Inlogo.svg' style="width:30px;height:30px;"></a> <a href='https://twitter.com/storiesbyheroes'><img src='/images/Twitlogo.svg' style="width:30px;height:30px;"></a>  <a href='https://www.instagram.com/storiesbyheroes/'><img  src= '/images/Instalogo.svg' style="width:30px;height:30px;"></a>  <a href='https://www.youtube.com/channel/UC45zqhO_NcXjyp1uzzQvG8A'><img src= '/images/Ytubelogo.svg' style="width:30px;height:30px;"></a><center></p>
+      <h4 style="color:Turquoise;"><center>Follow me<center></h4> 
+      <p><center><a href='https://www.linkedin.com/in/constantinos-petrides/'><img src='icons8-linkedin-2.svg' style="width:30px;height:30px;"></a><a href='https://github.com/costpetrides'><img src='icons8-github.svg' style="width:30px;height:30px;"></a></p>
     </div>  
 </div>
     
 </body>
 </html>
+	     
